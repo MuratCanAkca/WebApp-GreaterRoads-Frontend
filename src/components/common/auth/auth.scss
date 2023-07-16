@@ -1,0 +1,69 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+
+.auth{
+
+    div[class^= "col"]{
+
+        &:first-child{
+
+            min-height: 100vh;
+            background-image: url("../../../assets/img/bg/login-bg.jpeg");
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            position: relative;
+            @include m.flexbox(row , center , center , 0);
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: v.$color2;
+                opacity: 0.9;
+            }
+
+            @media (max-width){
+                min-height: auto;
+                height: 100px;
+            }
+
+        }
+
+        &:last-child{
+            padding: 4rem;
+        }
+
+        img{
+            position: relative;
+            z-index: 10;
+            @media (max-width:991px){
+                width: 150px;
+                height: auto;
+            }
+        }
+
+        .toolbar{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            color: v.$color1;
+            z-index: 10;
+            font-size: 3rem;
+            cursor: pointer;
+
+            svg{
+                &:hover{
+                    color: white;
+                }
+            }
+           
+
+        }
+
+    }
+
+}

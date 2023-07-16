@@ -1,0 +1,45 @@
+@use "../../../assets/scss/variables" as v;
+
+
+.vehicle-card{
+    text-align: center;
+    border-color: v.$color4;
+    min-height: 100%;
+
+    .card-title{
+        font-size: 2rem;
+        color: v.$color2;
+    }
+
+    .card-text{
+        font-size: 2rem;
+        font-weight: 600;
+        color: v.$color1;
+    
+        span{
+            font-size: 1rem;
+            color: v.$color2;
+        }
+
+    }
+
+    .card-footer{
+        padding: 0;
+        display: flex;
+
+        a{
+            flex: 1;
+            padding: 0.5rem;
+
+            &:first-child{
+                border-radius: 0 0 0 2rem;
+            }
+
+            &:last-child{
+                border-radius: 0 0 2rem 0;
+            }
+        }
+
+    }
+
+}

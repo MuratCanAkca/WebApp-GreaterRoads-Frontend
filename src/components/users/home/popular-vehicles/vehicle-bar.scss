@@ -1,0 +1,52 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+
+.vehicle-bar{
+
+    @include m.flexbox(row , space-between , center , 0.5rem);
+
+    .swiper-wrapper{
+
+        padding: 1rem;
+        text-align: center;
+        
+        .swiper-slide{
+
+            box-shadow: 2px 2px 10px v.$color3;
+            padding: 0.7rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+        .active{
+            background-color: v.$color1;
+            color: v.$color3;
+        }
+    }
+
+    .arrow{
+
+        background-color: v.$color3;
+        border-radius: 50%;
+        color: v.$color5;
+        font-size: 3rem;
+        box-shadow: 0 0 10px v.$color4;
+        @include m.flexbox(row , center , center , 0);
+        cursor: pointer;
+
+        &:hover{
+            color: v.$color1;
+            box-shadow: 0 0 10px v.$color1;
+        }
+
+        .passive{
+            color: v.$color4;
+            box-shadow: 0 0 10px v.$color4;
+            cursor: auto;
+            pointer-events: none;
+        }
+
+    }
+
+
+}

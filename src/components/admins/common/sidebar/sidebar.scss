@@ -1,0 +1,58 @@
+@use "../../../../assets/scss/mixins" as m;
+@use "../../../../assets/scss/variables" as v;
+
+.admin-navbar{
+
+    @media (min-width:992px) {
+
+        padding: 2rem !important ;
+        height: 100vh;
+        align-items: flex-start !important;
+        
+    }
+    
+    .container{
+
+
+    @media (min-width: 992px){
+
+        flex-direction: column;
+        align-items: flex-start !important;
+
+    }
+
+    .navbar-brand{
+        img{
+            @media (max-width : 500px) {
+                width: 170px;
+                height: auto;
+            }
+        }
+    }
+
+
+        .navbar-nav{
+
+            flex-direction: column !important;
+            margin-top: 2rem;
+
+            @media (min-width:992px) {
+
+                gap: 1.2rem;
+                
+            }
+
+            .nav-link{
+
+                color: v.$color3 !important;
+        
+                svg{
+                    color: v.$color1;
+                }
+
+            }
+
+        }
+ 
+    }   
+}

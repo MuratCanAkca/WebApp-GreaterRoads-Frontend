@@ -1,0 +1,22 @@
+@use "../../../assets/scss/mixins" as m;
+
+.unauthorized{
+    text-align: center;
+    @include m.flexbox(column , center , center , 0);
+    position: relative;
+    top: 10vh;
+    min-height: 80vh;
+
+    &::after{
+        content: "403";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        z-index: -1;
+        font-size: 30vw;
+        color: lightgray;
+        font-weight: 800;
+    }
+
+}

@@ -1,0 +1,18 @@
+
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@100&family=Vina+Sans&display=swap');
+//font ayarı buradan yazpılır
+
+
+/*Import libraries*/
+
+@import "bootstrap/scss/bootstrap";
+@import "sweetalert2/src/variables";
+@import "sweetalert2/src/sweetalert2";  
+@import "swiper/scss";
+
+/*custom styles*/
+.btn-primary{
+    color:white;
+}

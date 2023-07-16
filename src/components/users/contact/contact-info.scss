@@ -1,0 +1,9 @@
+@use "../../../assets/scss/mixins" as m;
+@use "../../../assets/scss/variables" as v;
+
+.contact-info{
+    @include m.reset-list();
+    @include m.flexbox(column , flex-start , flex-start , 1rem);
+ 
+    
+}

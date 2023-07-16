@@ -1,0 +1,34 @@
+@use "../../../../assets/scss/variables" as v;
+
+.user-menu{
+    .dropdown-menu{
+        padding:1.5rem 0 ;
+
+    }
+    button , a[role="button"]{
+        @media (max-width:991px){
+             background: none !important;
+             border: none;
+             padding: 1rem 0;
+             font-weight: 500;
+             color: v.$color2;
+             display: block;
+             text-align: left;
+        }
+    }
+    .dropdown-menu{
+        @media (max-width:991px) {
+            position: static;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    .dropdown-divider{
+        @media (max-width:991px) {
+        display: none;
+        }
+    }
+    
+    }
+}
